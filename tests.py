@@ -1,11 +1,26 @@
 from basen import BaseN
 
-"""
-	Converting an image to BaseN with custom alphabet
-"""
+print("""
+	Converting an str to BaseN with custom alphabet	
+""")
 
-chunk_size = 10
-engine = BaseN("lI", chunk_size)
+custom_alphabet = "lI"
+chunk_size = 2
+engine = BaseN(custom_alphabet, chunk_size)
+
+input_string = "This is a test post, please ignore"
+
+encoded = engine.encoder(input_string)
+decoded = engine.decoder(encoded)
+print(f"Input: {input_string} \n Output: {encoded}\n Converted back: {decoded}")
+
+print("""
+	Converting an image to BaseN with custom alphabet
+""")
+
+custom_alphabet = "abc"
+chunk_size = 8
+engine = BaseN(custom_alphabet, chunk_size)
 
 with open("lena.jpg", "rb") as image:
 	f = image.read()

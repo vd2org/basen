@@ -90,15 +90,18 @@ class BaseN:
 
         return self._pad_byte
 
-    def encoder(self, inp: Union[bytearray, bytes]) -> str:
+    def encoder(self, inp: Union[bytearray, bytes, str]) -> str:
         """\
-        Encodes bytearray or bytes to string.
+        Encodes bytearray, bytes or string to string.
 
         :param inp:
         :return:
         """
 
-        assert isinstance(inp, (bytearray, bytes)), "`input` must be `bytearray` or `bytes`!"
+        assert isinstance(inp, (bytearray, bytes, str)), "`input` must be `bytearray`, `bytes` or `str`!"
+
+        if type(inp) == str:
+            inp = inp.encode()
 
         pads = len(inp) % self.chunk_size
         if pads:
