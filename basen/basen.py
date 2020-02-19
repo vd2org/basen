@@ -100,7 +100,6 @@ class BaseN:
 
         assert isinstance(inp, (bytearray, bytes)), "`input` must be `bytearray` or `bytes`!"
 
-        print(len(inp))
         pads = len(inp) % self.chunk_size
         if pads:
             inp = inp + bytearray((self.pad_byte,)) * (self.chunk_size - pads)
