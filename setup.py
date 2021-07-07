@@ -1,6 +1,6 @@
 # Copyright (C) 2019-2021 by Ivan.
-# This file is part of Wheelchair, the async CouchDB connector.
-# Wheelchair is released under the MIT License (see LICENSE).
+# This file is part of BaseN package.
+# BaseN is released under the MIT License (see LICENSE).
 
 
 from os.path import join, dirname
