@@ -4,7 +4,7 @@ Custom encoder that encodes any binary data to given alphabet.
 
 ### Requirements
 
-Python 3.5 and above. No additional dependencies.
+Python 3.6 and above. No additional dependencies.
 
 ### Installation
 
