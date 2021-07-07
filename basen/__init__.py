@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2019 by Vd.
+# Copyright (C) 2017-2021 by Ivan.
 # This file is part of BaseN package.
 # BaseN is released under the MIT License (see LICENSE).
 
@@ -8,4 +8,4 @@ from .int2base import int2base, base2int
 
 
 def version():
-    return "2019.03"
+    return "0.0.1"

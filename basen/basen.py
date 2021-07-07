@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2019 by Ivan.
+# Copyright (C) 2017-2021 by Ivan.
 # This file is part of BaseN package.
 # BaseN is released under the MIT License (see LICENSE).
 
@@ -12,7 +12,7 @@ class BaseN:
     def __init__(self, alphabet: str, chunk_size: int, byteorder='big', pad_byte: int = 0xFF, pad_char: str = '='):
         """\
         Creates new BaseN encoder/decoder to encode arbitrary binary data to
-        string representation in a given base(lenght of alphabet).
+        string representation in a given base(length of alphabet).
 
         :param alphabet: alphabet to use in encoder
         :param chunk_size: encoding chunk size
@@ -90,7 +90,7 @@ class BaseN:
 
         return self._pad_byte
 
-    def encoder(self, inp: Union[bytearray, bytes, str]) -> str:
+    def encode(self, inp: Union[bytearray, bytes, str]) -> str:
         """\
         Encodes bytearray, bytes or string to string.
 
@@ -119,7 +119,7 @@ class BaseN:
             return out + self.pad_char * (self.chunk_size - pads)
         return out
 
-    def decoder(self, inp: str) -> bytearray:
+    def decode(self, inp: str) -> bytearray:
         """\
         Decodes string to bytearray.
 
