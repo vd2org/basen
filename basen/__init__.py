@@ -8,4 +8,4 @@ from .int2base import int2base, base2int
 
 
 def version():
-    return "0.0.4"
+    return "1.0.0"
