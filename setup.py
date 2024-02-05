@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2021 by Ivan.
+# Copyright (C) 2017-2024 by Ivan.
 # This file is part of BaseN package.
 # BaseN is released under the MIT License (see LICENSE).
 
