@@ -3,7 +3,7 @@ name = "basen-encoder"
 version = "1.0.1"
 description = "Custom encoder that encodes any binary data to given alphabet."
 keywords = [
-    "generator", "base-encoder", "basen", "base128", "base64", "base32", "base16"
+    "generator", "base-encoder", "basen", "base", "base128", "base64", "base32", "base16"
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -30,6 +30,11 @@ dependencies = []
 requires-python = ">=3.8,<3.13"
 readme = "README.md"
 license = { file = "LICENSE" }
+
+[project.urls]
+homepage = "https://github.com/vd2org/basen"
+repository = "https://github.com/vd2org/basen.git"
+issues = "https://github.com/vd2org/basen/issues"
 
 [build-system]
 requires = ["pdm-backend"]
