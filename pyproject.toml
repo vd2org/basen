@@ -1,6 +1,6 @@
 [project]
 name = "basen-encoder"
-version = "1.0.1"
+version = "1.0.2"
 description = "Custom encoder that encodes any binary data to given alphabet."
 keywords = [
     "generator", "base-encoder", "basen", "base", "base128", "base64", "base32", "base16"
