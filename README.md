@@ -8,13 +8,13 @@ Python 3.8 and above. No additional dependencies.
 
 ### Installation
 
-`pip install basen-converter`
+`pip install basen-encoder`
 
 ## Usage
 
 ### Numbers
 
-Convert a number to the string and back
+Encode a number to the string and back
 
 ```python
 import string
@@ -41,7 +41,7 @@ for i in range(1000, 2000, 9):
 
 ### Huge numbers
 
-Even huge numbers can be converted as well.
+Even huge numbers can be encoded as well.
 
 ```python
 import string
@@ -68,9 +68,9 @@ Am851IcwtXApqVErDmkjfH9ikry1v4YsyaP4zUrrmM8H8j83wfxbV02K
 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 ```
 
-### Convert a binary
+### Encode a binary
 
-Convert a binary data to printable text like base64 but with an arbitrary alphabet.
+Encode a binary data to printable text like base64 but with an arbitrary alphabet.
 
 ```python
 import string
