@@ -1,0 +1,46 @@
+[project]
+name = "basen"
+version = "0.1.0"
+description = "Custom encoder that encodes any binary data to given alphabet."
+keywords = [
+    "generator", "base-encoder", "basen", "base128", "base64", "base32", "base16"
+]
+classifiers = [
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Intended Audience :: Education',
+        'Intended Audience :: Information Technology',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3 :: Only',
+        'Topic :: Utilities',
+        'Topic :: Software Development',
+        'Topic :: Software Development :: Libraries',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+]
+authors = [
+    {name = "vd", email = "basen@vd2.org"},
+]
+dependencies = []
+requires-python = ">=3.8,<3.13"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest~=8.0.2",
+    "ubump~=0.1.10; python_version >= '3.11'",
+    "requests>=2.31.0",
+]

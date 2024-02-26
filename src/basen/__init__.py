@@ -6,6 +6,9 @@
 from .basen import BaseN
 from .int2base import int2base, base2int
 
+VERSION = "v0.1.0"
+__version__ = VERSION
+
 
 def version():
-    return "0.0.2"
+    return VERSION
