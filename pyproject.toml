@@ -1,5 +1,5 @@
 [project]
-name = "basen"
+name = "basen-encoder"
 version = "1.0.1"
 description = "Custom encoder that encodes any binary data to given alphabet."
 keywords = [
